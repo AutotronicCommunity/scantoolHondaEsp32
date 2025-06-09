@@ -383,7 +383,7 @@ void handleData() {
 void scanTool() {
   obdHonda.flush();
   obdHonda.write(TABLE, sizeof(TABLE));
-  delay(20); 
+  delay(100); 
   
   buffCount = 0;
   while ((obdHonda.available() > 0) && (buffCount < 29)) {
